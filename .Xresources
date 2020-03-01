@@ -1,0 +1,98 @@
+
+! define !
+
+#define cfg #cadddd
+#define cbg #282828
+#define ccurs #cadddd
+
+#define cbgalt #3d3d3d
+
+#define c00 #00181f
+#define c08 #657b83
+#define c01 #dc322f
+#define c09 #dc322f
+#define c02 #859900
+#define c10 #859900
+#define c03 #b58900
+#define c11 #b58900
+#define c04 #268bd2
+#define c12 #268bd2
+#define c05 #6c71c4
+#define c13 #6c71c4
+#define c06 #2aa198
+#define c14 #2aa198
+#define c07 #93a1a1
+#define c15 #fdf6e3
+
+! special colors
+*.foreground:  cfg
+*.background:  cbg
+*.cursorColor:  ccurs
+! black
+*.color0:      c00
+*.color8:      c08
+! red
+*.color1:      c01
+*.color9:      c09
+! green
+*.color2:      c02
+*.color10:     c10
+! yellow
+*.color3:      c03
+*.color11:     c11
+! blue
+*.color4:      c04
+*.color12:     c12
+! magenta
+*.color5:      c05
+*.color13:     c13
+! cyan
+*.color6:      c06
+*.color14:     c14
+! white
+*.color7:      c07
+*.color15:     c15
+
+
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
+
+URxvt*transparent:       true
+URxvt*shading:       2
+
+URxvt.font: xft:Inconsolata:pixelsize=24
+URxvt.letterSpace: 0
+
+*antialias:  true
+*autohint:   false
+
+!=== Rofi ===
+
+rofi.modi:                           window,drun,run
+rofi.sidebar-mode:                   true
+rofi.terminal:                       termite
+rofi.opacity:                        100
+rofi.width:                          50
+rofi.lines:                          8
+rofi.columns:                        1
+rofi.font:                           Inconsolata 24
+
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: cbg,  #FFFFFF,  cbg,  c02,  #FFFFFF
+
+!                  'background', 'border'
+rofi.color-window: cbg,      cbgalt
+rofi.bw:                             10
+rofi.location:                       0
+rofi.padding:                        20
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    2
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width:                8
+
+
+
