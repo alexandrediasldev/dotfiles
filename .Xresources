@@ -7,6 +7,7 @@
 
 #define cbgalt #3d3d3d
 
+!solarized dark
 #define c00 #00181f
 #define c08 #657b83
 #define c01 #dc322f
@@ -59,8 +60,10 @@ URxvt*scrollBar_right:   false
 
 URxvt*transparent:       true
 URxvt*shading:       2
-
-URxvt.font: xft:Inconsolata:pixelsize=24
+! broken font atm
+!URxvt.font: xft:Inconsolata:pixelsize=24
+!URxvt.letterSpace: 0
+URxvt.font: xft:Liberation Mono:pixelsize=22
 URxvt.letterSpace: 0
 
 *antialias:  true
