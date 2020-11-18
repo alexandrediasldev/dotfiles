@@ -6,6 +6,7 @@
 #define ccurs #cadddd
 
 #define cbgalt #3d3d3d
+#define cblack #000000
 
 !solarized dark
 #define c00 #00181f
@@ -27,7 +28,8 @@
 
 ! special colors
 *.foreground:  cfg
-*.background:  cbg
+*.background: cblack
+*.background2: cbg
 *.cursorColor:  ccurs
 ! black
 *.color0:      c00
@@ -58,8 +60,9 @@
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-URxvt*transparent:       true
-URxvt*shading:       2
+!use picom for transparency
+!URxvt*transparent:       true
+!URxvt*shading:       2
 ! broken font atm
 !URxvt.font: xft:Inconsolata:pixelsize=24
 !URxvt.letterSpace: 0
@@ -73,7 +76,7 @@ URxvt.letterSpace: 0
 
 rofi.modi:                           window,drun,run
 rofi.sidebar-mode:                   true
-rofi.terminal:                       termite
+rofi.terminal:                       urxvt
 rofi.opacity:                        100
 rofi.width:                          50
 rofi.lines:                          8

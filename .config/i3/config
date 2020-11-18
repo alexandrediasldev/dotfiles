@@ -218,6 +218,8 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 
 #polybar
-
 exec_always --no-startup-id "killall polybar; polybar -r default"
+#reshift
 exec --no-startup-id redshift
+#picom
+exec --no-startup-id picom
