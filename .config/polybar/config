@@ -21,7 +21,7 @@ background = ${xrdb:background2}
 background-alt = #444
 foreground = ${xrdb:foreground}
 foreground-alt = #555
-primary = ${xrdb:color2} 
+primary = ${xrdb:color10} 
 secondary = ${xrdb:color1} 
 alert = ${xrdb:color1} 
 

@@ -206,7 +206,7 @@ bindsym $mod+shift+x exec "~/.local/bin/betterlockscreen -l"
 
 
 #from .Xressource
-set_from_resource $active color2
+set_from_resource $active color10
 
 # window colors
 # class                 border  bground text    indicator child_border

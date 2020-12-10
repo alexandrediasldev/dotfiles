@@ -8,21 +8,33 @@
 #define cbgalt #3d3d3d
 #define cblack #000000
 
-!solarized dark
+!solarized dark main color
+!#define c00 #00181f
+!#define c08 #657b83
+!#define c09 #dc322f
+!#define c10 #859900
+!#define c11 #b58900
+!#define c12 #268bd2
+!#define c13 #6c71c4
+!#define c14 #2aa198
+!#define c07 #93a1a1
+!#define c15 #fdf6e3
+
+!custom
 #define c00 #00181f
 #define c08 #657b83
-#define c01 #dc322f
 #define c09 #dc322f
-#define c02 #859900
+#define c01 #fb4934
 #define c10 #859900
-#define c03 #b58900
+#define c02 #b8bb26
 #define c11 #b58900
-#define c04 #268bd2
+#define c03 #fabd2f
 #define c12 #268bd2
-#define c05 #6c71c4
+#define c04 #93c7eb
 #define c13 #6c71c4
-#define c06 #2aa198
+#define c05 #a4a7db
 #define c14 #2aa198
+#define c06 #71dad2
 #define c07 #93a1a1
 #define c15 #fdf6e3
 
@@ -63,10 +75,9 @@ URxvt*scrollBar_right:   false
 !use picom for transparency
 !URxvt*transparent:       true
 !URxvt*shading:       2
-! broken font atm
-!URxvt.font: xft:Inconsolata:pixelsize=24
 !URxvt.letterSpace: 0
-URxvt.font: xft:Liberation Mono:pixelsize=22
+!URxvt.font: xft:Liberation Mono:pixelsize=22
+URxvt.font: xft:Liberation Mono:pixelsize=24
 URxvt.letterSpace: 0
 
 *antialias:  true
@@ -84,7 +95,7 @@ rofi.columns:                        1
 rofi.font:                           Inconsolata 24
 
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: cbg,  #FFFFFF,  cbg,  c02,  #FFFFFF
+rofi.color-normal: cbg,  #FFFFFF,  cbg,  c10,  #FFFFFF
 
 !                  'background', 'border'
 rofi.color-window: cbg,      cbgalt
