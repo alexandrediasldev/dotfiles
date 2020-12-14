@@ -354,6 +354,7 @@ ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0-foreground = #FF0000
 
 animation-charging-0 = 
 animation-charging-1 = 
