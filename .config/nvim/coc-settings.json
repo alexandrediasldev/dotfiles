@@ -1,4 +1,8 @@
 {
+    "preferences":
+    {
+        "colorSupport":true
+    },
     "suggest":
     {
         "autoTrigger": "none"

@@ -104,3 +104,4 @@ augroup end
   " Use autocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
+autocmd CursorHold * silent call CocActionAsync('highlight')
