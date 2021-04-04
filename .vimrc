@@ -6,9 +6,6 @@ filetype on
 filetype plugin on
 
 
-
-
-
 set number
 set cc=80
 set expandtab
@@ -27,8 +24,9 @@ function! ToggleQuickFix()
         cclose
     endif
 endfunction
+
 nnoremap <S-n> :call ToggleQuickFix()<cr>
-noremap <C-n> :wa<cr>:make<cr> :copen<cr>
+noremap <M-n> :wa<cr>:make<cr> :copen<cr>
 noremap <C-j> :cn<CR>
 noremap <C-k> :cp<CR>
 
