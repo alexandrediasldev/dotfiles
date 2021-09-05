@@ -1,7 +1,7 @@
 " coc.nvim config
 
 " coc extensions
-let g:coc_global_extensions = ['coc-json', 'coc-explorer']
+let g:coc_global_extensions = ['coc-json', 'coc-explorer', 'coc-python']
 nnoremap <M-e> :CocCommand explorer<CR>
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some

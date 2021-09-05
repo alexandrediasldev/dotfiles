@@ -23,8 +23,6 @@ set backspace=eol,indent,start
 " Useful for keeping context when moving with j/k
 set scrolloff=5
 
-" For some stupid reason, vim requires the term to begin with "xterm", so the
-" automatically detected "rxvt-unicode-256color" doesn't work.
 
 " Reload a file when it is changed from the outside
 set autoread
@@ -32,12 +30,6 @@ set autoread
 set mouse=a
 " Briefly show matching braces, parens, etc
 set showmatch
-
-" Enable line wrapping
-set wrap
-
-" Wrap on column 80
-set textwidth=79
 
 
 " Highlight current line
@@ -75,8 +67,10 @@ endfunction
 let mapleader = ","
 
 nnoremap <S-n> :call ToggleQuickFix()<cr>
-noremap <leader>m :wa<cr>:make<cr> :copen<cr>
-noremap <leader>n :wa<cr>:make -j8<cr> :copen<cr>
+autocmd FileType c,cpp noremap <leader>m :wa<cr>:make<cr> :copen<cr>
+autocmd FileType c,cpp noremap <leader>n :wa<cr>:make -j8<cr> :copen<cr>
+
+autocmd FileType java noremap <leader>n :wa<cr>:!mvn package<cr>
 noremap <C-j> :cn<CR>
 noremap <C-k> :cp<CR>
 

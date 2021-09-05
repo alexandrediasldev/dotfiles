@@ -14,8 +14,8 @@ PS1='[\u@\h \W]\$ '
 #betterlockscreen
 export PATH="${PATH}:${HOME}/.local/bin/"
 
-export VISUAL=vim
-export EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
 export TERMCMD=urxvt
 
 
@@ -65,5 +65,25 @@ alias epispidercheck='cppcheck --enable=all --suppress=missingIncludeSystem -I .
 alias epicmakeccls='cmake -H. -BDebug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=YES;ln -s Debug/compile_commands.json .'
 
 
+mvnarchgen() {
+    echo "Generate a new maven project"
+    if [ "$#" -gt 1 ]; then
+        echo "Too many arguments."
+        return 1
+    elif [ "$#" -lt 1 ]; then
+        echo "Please supply project name"
+        return 1
+    fi
+    mvn archetype:generate -DgroupId=fr.epita."$1" \
+                           -DartifactId="$1"-app \
+                           -DarchetypeArtifactId=maven-archetype-simple \
+                           -DarchetypeVersion=1.4 \
+                           -DinteractiveMode=false;
 
 
+    sed -ie 's|\(<maven.compiler.[a-z]*>\)1.7\(</maven.compiler.[a-z]*>\)|\116\2|' "$1"-app/pom.xml
+
+}
+epijava () {
+    java -cp target/"$1"-app-1.0-SNAPSHOT.jar fr.epita."$1".App
+}
