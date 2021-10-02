@@ -66,6 +66,8 @@ alias epicmakeccls='cmake -H. -BDebug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_CO
 
 alias parseclaunch='python -m parsec.cli'
 
+alias wrap80='fold -w 80 -s '
+
 
 mvnarchgen() {
     echo "Generate a new maven project"
