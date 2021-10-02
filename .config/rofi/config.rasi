@@ -1,7 +1,6 @@
 configuration {
 //	color-normal: "#282828, #FFFFFF, #282828, #859900, #FFFFFF";
 //	color-window: "#282828, #3d3d3d";
-/
 
 
 	modi: "window,drun,run";
