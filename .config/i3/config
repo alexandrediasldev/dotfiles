@@ -197,12 +197,15 @@ smart_gaps true
 
 #custom bind
 bindsym $mod+shift+w exec google-chrome-stable
+bindsym $mod+shift+b exec urxvt -e ranger
 
 #Wallpaper
 
 exec --no-startup-id feh --bg-scale ~/.config/Wallpaper.jpg
 #custom i3lock
-bindsym $mod+shift+x exec "~/.local/bin/betterlockscreen -l"
+#run at first install
+#betterlockscreen --dim 10 --blur 0.2 -u .config/Wallpaper.jpg
+bindsym $mod+shift+x exec "betterlockscreen --lock dimblur"
 
 
 #from .Xressource
@@ -223,3 +226,5 @@ exec_always --no-startup-id "killall polybar; polybar -r default"
 exec --no-startup-id redshift
 #picom
 exec --no-startup-id picom
+
+
