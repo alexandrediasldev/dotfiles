@@ -228,3 +228,6 @@ exec --no-startup-id redshift
 exec --no-startup-id picom
 
 
+# Do to setup multi_key
+# xmodmap -e "keycode 151 = Multi_key"
+

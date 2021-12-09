@@ -68,6 +68,10 @@ alias parseclaunch='python -m parsec.cli'
 
 alias wrap80='fold -w 80 -s '
 
+alias parsetup='python setup.py extract_translations compile_translations generate_pyqt'
+alias partr="nvim parsec/core/gui/tr/parsec_en.po"
+alias parfr="nvim parsec/core/gui/tr/parsec_fr.po"
+
 
 mvnarchgen() {
     echo "Generate a new maven project"
@@ -107,3 +111,5 @@ function ranger {
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
+
+
