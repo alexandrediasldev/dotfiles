@@ -72,6 +72,11 @@ alias parsetup='python setup.py extract_translations compile_translations genera
 alias partr="nvim parsec/core/gui/tr/parsec_en.po"
 alias parfr="nvim parsec/core/gui/tr/parsec_fr.po"
 
+alias parturin="maturin develop --manifest-path=oxidation/libparsec_python/Cargo.toml"
+
+
+alias readmd="grip -b"
+
 
 mvnarchgen() {
     echo "Generate a new maven project"
