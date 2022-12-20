@@ -70,7 +70,7 @@
 *.color7:      c07
 *.color15:     c15
 
-
+URxvt.perl-ext-common:-confirm-paste
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 

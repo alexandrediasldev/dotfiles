@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color -n'
 alias untar='tar -xvf'
+alias ip="ip -c"
 PS1='[\u@\h \W]\$ '
 
 
@@ -118,3 +119,5 @@ function ranger {
 }
 
 
+
+complete -C /usr/bin/terraform terraform
